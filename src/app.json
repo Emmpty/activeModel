@@ -1,0 +1,9 @@
+{
+  "pages": [
+    "pages/main/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff"
+  }
+}
