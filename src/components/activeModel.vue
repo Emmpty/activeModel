@@ -1,6 +1,8 @@
 <template>
-  <div class="model_box container_flex column center pingmucenter" 
-  :class="{'active':showActive}" v-if="showPdfModel" :style="{height:aheight+'rpx'}">
+  <div class="model_box container_flex column center pingmucenter"
+       :class="{'active':showActive}"
+       v-if="showPdfModel"
+       :style="{height:aheight+'rpx'}">
     <slot></slot>
   </div>
 </template>
@@ -19,18 +21,18 @@ export default {
 }
 </script>
 <style scoped lang="less">
-.model_box{
-  position:absolute;
-  width:560rpx;
-  height:368rpx;
+.model_box {
+  position: absolute;
+  width: 560rpx;
+  height: 368rpx;
   opacity: 0;
-  transform:scale(0.5);
-  border-radius:30rpx;
-  transition: all .3s;
-  background-color:#fff;
+  transform: scale(0.5);
+  border-radius: 30rpx;
+  transition: all 0.3s;
+  background-color: #fff;
 }
-  .active{
-    transform:scale(1);
-    opacity: 1;
-  }
+.active {
+  transform: scale(1);
+  opacity: 1;
+}
 </style>

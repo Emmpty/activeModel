@@ -1,13 +1,11 @@
 <template>
-  <div
-    v-if="isShow"
-    catchtouchmove="ture"
-    class="mask"
-    :class="{'active': showBgk}"
-    :style="{top:top+'rpx'}"
-    id="mask"
-    @click="hideMask($event)"
-  >
+  <div v-if="isShow"
+       catchtouchmove="ture"
+       class="mask"
+       :class="{'active': showBgk}"
+       :style="{top:top+'rpx'}"
+       id="mask"
+       @click="hideMask($event)">
     <slot></slot>
   </div>
 </template>
