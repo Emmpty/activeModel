@@ -59,4 +59,17 @@ export default {
 }
 </script>
 <style scoped lang="less">
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 999;
+  opacity: 0;
+  transition: all 0.2s;
+}
+.active {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 </style>

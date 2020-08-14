@@ -1,14 +1,13 @@
 <template>
   <div class="model_box container_flex column center pingmucenter"
-       :class="{'active':showActive}"
-       v-if="showPdfModel"
-       :style="{height:aheight+'rpx'}">
+       :class="{'active': showActive}"
+       :style="{ height: aheight +'rpx', width: awidth +'rpx' }">
     <slot></slot>
   </div>
 </template>
 <script>
 export default {
-  props: ['showPdfModel', 'showActive', 'aheight'],
+  props: ['showActive', 'aheight', 'awidth'],
   data () {
     return {
     }
