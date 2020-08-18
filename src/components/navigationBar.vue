@@ -27,11 +27,20 @@
 <script >
 
 export default {
+  /**
+    @isShowHome 是否展示 home 按钮
+    @navigationBarHeight 导航栏高度
+    @bgcolor 背景颜色
+    @title 页面标题
+    @callbackFun home 按钮点击事件
+    @fontColor 字体颜色
+    @hideIconBar 隐藏自定义导航栏
+  */
   props: ['isShowHome', 'navigationBarHeight', 'bgcolor', 'title', 'callbackFun', 'fontColor', 'hideIconBar'],
   data () {
     return {
-      isIOS: true,
-      statusBarHeight: 0,
+      isIOS: true, // ios风格
+      statusBarHeight: 0, // 状态栏高度
       init: false,
       hide: false
     }

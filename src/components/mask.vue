@@ -27,7 +27,7 @@ export default {
       if (!e) {
         this.toHideMask()
       } else if (e.target.id === 'mask') {
-        if (this.noclickhide) return
+        if (this.noclickhide) return // msak 点击屏蔽
         this.toHideMask()
       }
     },
